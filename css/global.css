@@ -1,0 +1,244 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* header*/
+header {
+  margin-bottom: 65px;
+}
+header nav {
+  background-color: red;
+  width: 100%;
+  height: 65px;
+  position: fixed;
+  top: 0;
+}
+header nav ul {
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 20px;
+}
+header nav ul li {
+  margin-left: 15px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* main*/
+.container {
+  width: 100%;
+  background-color: rgb(54, 53, 53);
+}
+.container .section1 {
+  width: 100%;
+  height: 655px;
+}
+.container .section1 .div-sect1 {
+  width: 100%;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container .section1 .div-sect1 h2 {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.container .section1 .div-sect1 p {
+  color: red;
+  font-style: italic;
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+.container .section2 {
+  background-color: blue;
+  width: 100%;
+}
+.container .section2 .div-sect2 {
+  width: 100%;
+  height: 100%;
+  padding-top: 70px;
+}
+.container .section2 .div-sect2 .title {
+  width: 70%;
+  margin: 0 auto;
+  font-size: 2.6rem;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 35px;
+  border-bottom: 2px solid whitesmoke;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.container .section2 .div-sect2 .sect2a {
+  width: 100%;
+  margin: 0 auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: white;
+}
+.container .section2 .div-sect2 .sect2a .box {
+  background-color: rgb(16, 16, 34);
+  width: 30%;
+  margin: 1%;
+}
+@media (max-width: 950px) {
+  .container .section2 .div-sect2 .sect2a .box {
+    width: 48%;
+  }
+}
+@media (max-width: 520px) {
+  .container .section2 .div-sect2 .sect2a .box {
+    width: 98%;
+  }
+}
+.container .section2 .div-sect2 .sect2a .box img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.container .section2 .div-sect2 .sect2a .box a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+.container .section2 .div-sect2 .sect2a .box a h4 {
+  padding: 20px;
+}
+.container .section3 {
+  width: 100%;
+  height: 655px;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container .section3 .div-sect3 {
+  width: 100%;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container .section3 .div-sect3 .div-sect3a h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.container .section3 .div-sect3 .div-sect3a p {
+  font-size: 1.1rem;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.container .section3 .div-sect3 .div-sect3b {
+  width: 70%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  color: white;
+}
+.container .section3 .div-sect3 .div-sect3b a {
+  color: white;
+  text-decoration: none;
+}
+
+/* footer */
+footer {
+  background-color: rgb(54, 53, 53);
+  width: 100%;
+  height: 125px;
+  border-top: 4px solid red;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.2rem;
+}
+footer .footer-div {
+  width: 85%;
+  height: 85%;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .left {
+  margin-right: 20px;
+}/*# sourceMappingURL=global.css.map */
