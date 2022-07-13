@@ -6,7 +6,7 @@
  header{
     margin-bottom: 65px;
     nav{
-        background-color: red;
+        background-color: rgb(83, 6, 6);
         width: 100%;
         height: 65px;
         position: fixed;
@@ -16,9 +16,9 @@
         height: 100%;
         justify-content: flex-end;
         align-items: center;
-        padding-right: 20px;
+        padding-right: 35px;
         li{
-            margin-left: 15px;
+            margin-left: 39px;
             a{
                 text-decoration: none;
                 color: white;
@@ -53,7 +53,7 @@
                 margin-bottom: 10px;
             }
             p{
-                color: red;
+                color: rgb(113, 10, 10);
                 font-style: italic;
                 font-size: 1.2rem;
                 font-weight: 100;
@@ -62,8 +62,10 @@
         }  
     }
     .section2{
-        background-color: blue;
+        background-color: rgb(30, 30, 92);
         width: 100%;
+        padding-bottom: 50px;;
+        
         .div-sect2{
             width: 100%;
             height: 100%;
@@ -80,19 +82,25 @@
                 margin-bottom: 30px;;             
             }
             .sect2a {
-                width: 100%;
+                width: 85%;
+                @media (max-width: 950px) {
+                    width: 90%;
+                }
+                @media (max-width: 520px) {
+                    width: 95%;
+                }
                 margin: 0 auto;
                 flex-wrap: wrap;
                 color: white;;
                 .box{
                     background-color: rgb(16, 16, 34);
                     width: 30%;                   
-                    margin: 1%;
+                    margin: 1.6%;
                     @media (max-width: 950px) {
-                        width: 48%;
+                        width: 46.8%;
                     }
                     @media (max-width: 520px) {
-                        width: 98%;
+                        width: 96%;
                     }
                     img{
                         width: 100%;
@@ -110,9 +118,25 @@
                     
                 }
             }
+          
+            
 
         }
-       
+        .div-button{
+            width: 120px;
+            height: 40px;
+            margin: 30px auto;
+            background-color: rgb(16, 16, 34);
+            justify-content: center;
+            align-items: center;
+            
+            a{
+                text-decoration: none;
+                font-size: 1.3rem;
+                font-weight: 400;
+                color: aliceblue;
+            }
+        }
     }
     .section3{
         width: 100%;
